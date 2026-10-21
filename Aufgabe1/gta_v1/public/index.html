@@ -33,13 +33,13 @@
 
                 <!-- ... your code here ... -->
                 <label>Latitude:</label> 
-                <input type="text" id="input_tlatitude" placeholder="49.015563541375286">
+                <input type="text" id="input_tlatitude", value="49.0155", readonly>
                 <label>Longitude:</label> 
-                <input type="text" id="input_tlongitude" placeholder="8.391365795072199">
+                <input type="text" id="input_tlongitude", value="8.3913", readonly>
                 <label>Name:</label> 
-                <input type="text" id="input_name" placeholder="e.g. Hochschule Karlsruhe">
+                <input type="text" id="input_name" placeholder="e.g. Hochschule Karlsruhe", required, maxlength="10">
                 <label>Hashtag:</label> 
-                <input type="text" id="input_text" placeholder="e.g. #edu">
+                <input type="text" id="input_text" placeholder="e.g. #edu", pattern="^#[A-Za-z0-9]{1,10}", maxlength="10">
 
                 <button type="submit" id="tag_submit">Add Tag</button>
 
