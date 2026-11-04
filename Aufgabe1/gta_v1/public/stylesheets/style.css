@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: chocolate;
 }
 
 a {
@@ -46,7 +47,9 @@ a {
 
 /* ### TODO ### Styles for other HTML elements */
 
-/* ... your code here ... */
+.header {
+  background-color: plum;
+}
 
 
 /* Grid styles (no changes required) */
@@ -124,6 +127,7 @@ a {
 
 .tagging {
   flex: 1;
+  display: block;
 }
 
 /* ### TODO ### Styles for Discovery component */
@@ -142,8 +146,9 @@ a {
 }
 /* ### TODO ### Styles for Footer Component */
 
-/* ... your code here ... */
-
+.footer {
+  background-color: plum;
+} 
 
 /* ### TODO ### Media Queries */
 
