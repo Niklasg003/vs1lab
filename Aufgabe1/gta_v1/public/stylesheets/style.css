@@ -114,19 +114,32 @@ a {
 
 /* ### TODO ### Styles for Main Component */
 
-/* ... your code here ... */
+.main {
+  display: flex;
+  gap : 3%;
+}
 
 
 /* ### TODO ### Styles for Tagging component */
 
-/* ... your code here ... */
-
+.tagging {
+  flex: 1;
+}
 
 /* ### TODO ### Styles for Discovery component */
 
-/* ... your code here ... */
+.discovery {
+  flex: 2;
+  display: flex;
+  gap:2%;
+    flex-direction: column;
 
+}
 
+.discovery__wrapper {
+  display: flex;
+  gap: 5%;
+}
 /* ### TODO ### Styles for Footer Component */
 
 /* ... your code here ... */
@@ -134,4 +147,17 @@ a {
 
 /* ### TODO ### Media Queries */
 
-/* ... your code here ... */
+@media (max-width: 850px) {
+  .main {
+    flex-direction: column;  gap : 3%;
+
+      gap : 3%;
+  }
+
+  .discovery__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+}
+
