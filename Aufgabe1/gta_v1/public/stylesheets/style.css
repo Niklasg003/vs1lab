@@ -166,10 +166,10 @@ fieldset {
 /* ### TODO ### Styles for Discovery component */
 
 .discovery {
-  /* flex: 2; */
-  /* display: flex; */
-  /* gap: 2%; */
-  /* flex-direction: column; */
+  flex: 2;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
 }
 
 .discovery__results {
