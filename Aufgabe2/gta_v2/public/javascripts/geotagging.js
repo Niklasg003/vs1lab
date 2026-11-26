@@ -151,6 +151,14 @@ function updateLocation() {
         dlatitude.setAttribute("value", helper.latitude);
         const dlongitude = document.getElementById("input_dlongitude");
         dlongitude.setAttribute("value", helper.longitude);
+
+        const mapManager = new MapManager();
+        mapManager.initMap(helper.latitude, helper.longitude);
+        mapManager.updateMarkers(helper.latitude, helper.longitude);
+
+        const img = document.getElementById("map");
+        img.getElementById("mapView").remove();
+        img.getElementsByTagName("span").remove();
     });
 }
 
